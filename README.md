@@ -25,7 +25,7 @@ Classification of directed graphs on n=5 nodes based on CTLN dynamics.
 
 	mEC_catalogue_script.m and special_attractors_script.m are scripts that were used to generate the plots in the slide shows n5_mECs_aug16.pdf/pptx and n5_attECs_aug16.pdf/pptx. These scripts also consist of repeated calls to quick_plot.
 
-	The functions align_graph.m and align_graph_KM.m are two variants on graph alignment routines that were used to find good permutations of the nodes of each graph to ensure that equivalent core motifs, and attractors, are aligned across graphs in the same equivalence class and/or having similar attractors.
+	The functions align_graph.m and align_graph_KM.m are two variants on graph alignment routines that were used to find good permutations of the nodes of each graph. Good permutations are essential to ensure that equivalent core motifs, and their corresponding attractors, are aligned across graphs in the same equivalence class. This also allowed us to detect "by eye" when attractors across mECs were equivalent.
 
 4. Makefiles
 
