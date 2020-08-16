@@ -18,7 +18,9 @@ Classification of directed graphs on n=5 nodes based on CTLN dynamics.
 3. Matlab code
 
 	The main function for the user is quick_plot.m. For example, the command
+	
 	> quick_plot(20) 
+	
 	produces a plot of graph 20 and a CTLN solution that converges to an attractor.
 
 	quick_plot_script.m is a script with several sample calls to quick_plot. One can vary initial conditions, CTLN parameters, and choose a sequence of graphs to plot in a specified order.
@@ -30,3 +32,5 @@ Classification of directed graphs on n=5 nodes based on CTLN dynamics.
 4. Makefiles
 
 	The makefiles make_n5_digraphs.m, make_n5_mECs.m, and make_n5_X0_eps0_51_delta1_76.m are scripts that generate the .mat files n5_digraphs.mat, n5_mECs.mat, and n5_X0_eps0_51_delta1_76.mat, respectively. A user who already has the .mat files need not use these makefiles, but they serve as a textual reference.
+
+Created by Carina Curto and Katherine Morrison (PIs) in collaboration with Caitlyn Parmelee, Sumita Garai, and Joshua Paik. August 16, 2020.
