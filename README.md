@@ -34,3 +34,7 @@ Classification of directed graphs on n=5 nodes based on CTLN dynamics.
 	The makefiles make_n5_digraphs.m, make_n5_mECs.m, and make_n5_X0_eps0_51_delta1_76.m are scripts that generate the .mat files n5_digraphs.mat, n5_mECs.mat, and n5_X0_eps0_51_delta1_76.mat, respectively. A user who already has the .mat files need not use these makefiles, but they serve as a textual reference.
 
 Created by Carina Curto and Katherine Morrison (PIs) in collaboration with Caitlyn Parmelee, Sumita Garai, and Joshua Paik. August 16, 2020.
+
+5. Talk Slides
+
+	The presentations CNeuro-SummerSchool-2020-Part1.pptx and CNeuro-SummerSchool-2020-Part2.pptx are parts 1 and 2 of a talk at a computational neuroscience summer school given on Aug 19, 2020. This provides background on TLNs and CTLNs, context for the n=5 classification, and summarizes a variety of mathematical and computational results that have been obtained about these networks.
