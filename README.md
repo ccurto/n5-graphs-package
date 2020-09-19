@@ -38,3 +38,11 @@ Created by Carina Curto and Katherine Morrison (PIs) in collaboration with Caitl
 5. Talk Slides
 
 	The presentations CNeuro-SummerSchool-2020-Part1.pptx and CNeuro-SummerSchool-2020-Part2.pptx are parts 1 and 2 of a talk at a computational neuroscience summer school given on Aug 19, 2020. This provides background on TLNs and CTLNs, context for the n=5 classification, and summarizes a variety of mathematical and computational results that have been obtained about these networks.
+
+6. Graph Calculator
+
+	It may not be easy to figure out which of the 9608 graphs in our classification matches a given n=5 graph. The following graph calculator returns the correct graph number for a user-input graph.
+	
+	https://joshyp.shinyapps.io/n5_calculator/
+
+The calculator was last updated on September 19, 2020.
