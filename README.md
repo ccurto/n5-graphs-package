@@ -44,5 +44,7 @@ Created by Carina Curto and Katherine Morrison (PIs) in collaboration with Caitl
 	It may not be easy to figure out which of the 9608 graphs in our classification matches a given n=5 graph. The following graph calculator returns the correct graph number for a user-input graph.
 	
 	https://joshyp.shinyapps.io/n5_calculator/
+	
+	The calculator was last updated on September 19, 2020.
 
-The calculator was last updated on September 19, 2020.
+This README file was last updated on September 19, 2020, to add a link to the graph calculator.
