@@ -65,7 +65,7 @@ mEC_core_motifs{11} = '{ [1  2  3  4  5] }';
 mEC{12} = [ 12 ]; 
 mEC_label{12} = 'mEC 12: extended 4-cycu down-skip edge node 2 (** no core motifs for eps = 0.51, delta = 1.76 **), Group I-D (graph 12)'; 
 mEC_core_motifs{12} = '{ [] }'; 
-mEC_notes{12} = 'The attractor for this graph (which has *no* core motifs) has surprise symmetry.  This class contains 1 graph that has parameter dependent core motifs (# 12).';
+mEC_notes{12} = 'The attractor for this graph (which has *no* core motifs) has surprise symmetry.  This class contains 1 graph that has parameter dependent core motifs (# 12): the graph is a n=5 core motif for eps = 0.1, delta = 0.12, while it has no core motifs for eps = 0.51, delta = 1.76.';
 
 mEC{13} = [ 13 ]; 
 mEC_label{13} = 'mEC 13: extended 4-ufd (core motif), Group I-D (graph 13)'; 
@@ -138,7 +138,7 @@ mEC_notes{27} = 'The attractor for this core motif has surprise symmetry.';
 mEC{28} = [ 28 ]; 
 mEC_label{28} = 'mEC 28: cyclic union pt, 2-clique, 2-clique w/ two added back edges (v2) (core motif), Group I-G (graph 28)'; 
 mEC_core_motifs{28} = '{ [1  2  3  4  5] }'; 
-mEC_notes{28} = 'The attractor for this core motif has surprise symmetry.  This graph is s_i-equivalent to graph 27.';
+mEC_notes{28} = 'The attractor for this core motif has surprise symmetry.  This graph is sigma-equivalent to graph 27.';
 
 mEC{29} = [ 29 ]; 
 mEC_label{29} = 'mEC 29: cyclic union pt, 2-clique, 2-clique w/ three added back edges (v1) (core motif), Group I-G (graph 29)'; 
@@ -148,7 +148,7 @@ mEC_notes{29} = 'The attractor for this core motif has surprise symmetry.';
 mEC{30} = [ 30 ]; 
 mEC_label{30} = 'mEC 30: cyclic union pt, 2-clique, 2-clique w/ three added back edges (v2) (core motif), Group I-G (graph 30)'; 
 mEC_core_motifs{30} = '{ [1  2  3  4  5] }'; 
-mEC_notes{30} = 'The attractor for this core motif has surprise symmetry.  This graph is s_i-equivalent to graph 29.';
+mEC_notes{30} = 'The attractor for this core motif has surprise symmetry.  This graph is sigma-equivalent to graph 29.';
 
 mEC{31} = [ 31 ]; 
 mEC_label{31} = 'mEC 31: cyclic union pt, 2-clique, 2-clique w/ two added back edges (v3) (core motif), Group I-G (graph 31)'; 
@@ -158,12 +158,12 @@ mEC_notes{31} = 'The attractor for this core motif has surprise symmetry.';
 mEC{32} = [ 32 ]; 
 mEC_label{32} = 'mEC 32: envelope attractor (v1) (** no core motifs for eps = 0.51, delta = 1.76 **), Group I-H (graph 32)'; 
 mEC_core_motifs{32} = '{ [] }'; 
-mEC_notes{32} = 'This class contains 1 graph that has parameter dependent core motifs (# 32).';
+mEC_notes{32} = 'This class contains 1 graph that has parameter dependent core motifs (# 32): the graph is a n=5 core motif for eps = 0.1, delta = 0.12, while it has no core motifs for eps = 0.51, delta = 1.76.';
 
 mEC{33} = [ 33 ]; 
 mEC_label{33} = 'mEC 33: envelope attractor (v2) (** no core motifs for eps = 0.51, delta = 1.76 **), Group I-H (graph 33)'; 
 mEC_core_motifs{33} = '{ [] }'; 
-mEC_notes{33} = 'This class contains 1 graph that has parameter dependent core motifs (# 33).';
+mEC_notes{33} = 'This class contains 1 graph that has parameter dependent core motifs (# 33): the graph is a n=5 core motif for eps = 0.1, delta = 0.12, while it has no core motifs for eps = 0.51, delta = 1.76.';
 
 mEC{34} = [ 34 ]; 
 mEC_label{34} = 'mEC 34: envelope attractor (v3) (core motif), Group I-H (graph 34)'; 
@@ -212,7 +212,7 @@ mEC_core_motifs{44} = '{ [1  2  3  4], [2  3  4  5] }';
 mEC{45} = [ 62:118 ]; 
 mEC_label{45} = 'mEC 45: 4-cycu [57 graphs] Group II (graphs [62:118])'; 
 mEC_core_motifs{45} = '{ [1  2  3  4] }'; 
-mEC_notes{45} = 'This class contains 5 graph(s) that have parameter dependent core motifs (# 86   93   97  113  117).';
+mEC_notes{45} = 'This class contains 5 graph(s) that have parameter dependent core motifs (# 86   93   97  113  117): each of these graphs is a n=5 core motif for eps = 0.1, delta = 0.12, while it has just a 4-cycu for eps = 0.51, delta = 1.76.';
 
 mEC{46} = [ 119:125 ]; 
 mEC_label{46} = 'mEC 46: 4-cycu + sink [7 graphs] Group II (graphs [119:125])'; 
@@ -702,8 +702,8 @@ mEC_end = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,  ...
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 % mECs containing at least one graph that has a core motif with *no* corresponding attractor: 
-% (there are 14 such mECs) 
-mECs_missing_att = [ 46, 48, 49, 51, 57, 58, 61, 64, 66, 67, 68, 69, 74, 75 ];  
+% (there are 11 such mECs) 
+mECs_missing_att =  [ 46, 48, 49, 51, 57, 58, 61, 64, 67, 69, 75 ];
 
 % Graphs that have a core motif with *no* corresponding attractor: 
 % (there are 19 such graphs) 
