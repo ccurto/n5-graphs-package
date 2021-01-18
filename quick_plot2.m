@@ -2,7 +2,7 @@ function [X0,proj] = quick_plot2(graph,X0,T,e,d,proj,null_flag,perm,ymax);
 
 % function [X0,proj] = quick_plot2(graph,X0,T,e,d,proj,null_flag,perm,ymax);
 %
-% graph = graph number in sAcell2 from n5_attClasses.mat 
+% graph = graph number in sAcell2 from n5_coreClasses.mat 
 %         OR an sA graph adjacency matrix
 % note: unlike in quick_plot, here we want a *single* graph number
 % 
@@ -21,11 +21,11 @@ function [X0,proj] = quick_plot2(graph,X0,T,e,d,proj,null_flag,perm,ymax);
 % plots graph, rate curves, gray scale for a corresponding CTLN
 %
 % created Jan 4, 2021 by Carina to simplify quick_plot.m for use
-% with the data in n5_attClasses.mat.
+% with the data in n5_coreClasses.mat.
 % updated Jan 16, 2020 to add ymax option for fixing ylim on ratecurves
 
 
-% load classes created by make_n5_attClasses.m
+% load classes created by make_n5_coreClasses.m
 % note: sAcell2 already the aligning permutations built in!
 load('n5_coreClasses','sAcell2','X0cell2');
 
