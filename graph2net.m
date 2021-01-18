@@ -8,6 +8,7 @@ function [W,A] = graph2net(sA,e,d)
 %
 % create matrix W for a threshold-linear network from directed graph 
 % last modified june 22, 2015
+% updated dec 30, 2020 to allow generalized sA matrices for interpolation
 
 if nargin < 2 || isempty(e)
     e = .25;
@@ -17,10 +18,22 @@ if nargin < 3 || isempty(d)
     d = 2*e;
 end;
 
-% create matrix A from sA
-A = e*(sA>0) - d*(sA<=0); % 1 -> eps, 0 -> - delta
-A = A - diag(diag(A)); % reset diagonal to 0
+W = zeros(size(sA));
+n = size(sA,1);
+for i=1:n
+    for j=1:n
+        t = sA(i,j);
+        W(i,j) = t*(-1+e) + (1-t)*(-1-d);
+    end
+    W(i,i) = 0; % make sure diagonal is 0
+end
 
-% create matrix W from A: W = I - 11^t + eps*A
-n = size(A,1);
-W = eye(n) - ones(n,n) + A;  
+% older code, from before dec 30, 2020:
+%
+% % create matrix A from sA
+% A = e*(sA>0) - d*(sA<=0); % 1 -> eps, 0 -> - delta
+% A = A - diag(diag(A)); % reset diagonal to 0
+% 
+% % create matrix W from A: W = I - 11^t + eps*A
+% n = size(A,1);
+% W = eye(n) - ones(n,n) + A;  

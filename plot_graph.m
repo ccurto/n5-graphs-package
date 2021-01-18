@@ -1,6 +1,6 @@
-function plot_graph(sA,colors,middleflag)
+function plot_graph(sA,colors,middleflag,edgecolor,edgewidth)
 
-% function plot_graph(sA,colors,middleflag)
+% function plot_graph(sA,colors,middleflag,edgecolor,edgewidth)
 %
 % This function plots all the nodes of the graph around a circle then puts
 % a directed arrow from node j to node i if sA(i,j)=1
@@ -8,7 +8,11 @@ function plot_graph(sA,colors,middleflag)
 % middleflag = 1 for plotting last node in the middle, else ignore
 %
 % updated june 1, 2020 to make the arrows on edges a bit more prominent
-% last updated june 23, 2020 to fix "hold on" bug for independent set
+% updated june 23, 2020 to fix "hold on" bug for independent set
+% updated october 25, 2020 to add edgecolor option
+% updated nov 14, 2020 to add edgewidth option
+% updated dec 27, 2020 to make nodes larger
+% updated dec 30, 2020 to allow generalized sA matrices
 
 n=size(sA,1);
 
@@ -23,6 +27,14 @@ end;
 
 if nargin<3 || isempty(middleflag)
     middleflag = 0;
+end;
+
+if nargin<4 || isempty(edgecolor)
+    edgecolor = [0 0 0]; % default to black
+end;
+
+if nargin<5 || isempty(edgewidth)
+    edgewidth = 1.5;
 end;
 
 % determine positions for nodes
@@ -41,9 +53,12 @@ end;
 % plot arrows
 for j=1:n
     for i=1:n
-        if sA(i,j)==1
+        if sA(i,j)>0 % plot edges for sA(i,j) = 1 and interpolated edges
+            t = sA(i,j);
+            interpcolor = t*edgecolor + (1-t)*[1 1 1];
             dir=[x(i), y(i)]-[x(j),y(j)];
-            quiver(x(j), y(j), dir(1), dir(2),.87,'-k','LineWidth',1.5, 'MaxHeadSize', .6);  % Adjust this line to affect arrowheads and edge length
+            quiver(x(j), y(j), dir(1), dir(2),.87,...
+                'color',interpcolor,'LineWidth',edgewidth, 'MaxHeadSize', .6);  % Adjust this line to affect arrowheads and edge length
             hold on;
         end
     end
