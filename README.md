@@ -5,7 +5,7 @@ Classification of directed graphs on n=5 nodes based on CTLN dynamics.
 
 	There are 9608 simple directed graphs on n=5 nodes. We have organized them into 155 motif equivalence classes (mECs) based on their core motif structure.
 
-	n5_mECs_README_aug16.pdf/docx has a list of all 155 mECs and their core motif structures. It is useful to have a printout of this file as a classification key to use while exploring graphs and attractors.
+	n5_mECs_README_oct4.pdf/docx has a list of all 155 mECs and their core motif structures. It is useful to have a printout of this file as a classification key to use while exploring graphs and attractors. (The older aug16 version from 2020 was updated on October 4, 2020.)
 
 2. Dynamic Attractors
 
@@ -45,4 +45,18 @@ Classification of directed graphs on n=5 nodes based on CTLN dynamics.
 	
 	The calculator was last updated on September 19, 2020.
 
-Created by Carina Curto and Katherine Morrison (PIs) in collaboration with Caitlyn Parmelee, Sumita Garai, and Joshua Paik. August 16, 2020. This README file was last updated on September 19, 2020, to add a link to the graph calculator.
+7. Figures and Slideshows
+
+	all-attClasses-jan17.png are drawings of master graphs for different attractor classes. Black edges are mandatory, and blue edges are optional.
+
+	all-coreClasses-jan17.png are drawings of master graphs for different core motif classes.
+
+	n5_cores_4mar2022.pdf contains drawings of all n=5 core motifs.
+
+	n5_attECs_aug16.pdf/pptx is a slideshow of dynamic attractor equivalence classes.
+
+	n5_mECs_aug16.pdf/pptx is a slideshow of attractors for n=5 motif equivalence class representatives.
+
+
+
+Created by Carina Curto and Katherine Morrison (PIs) in collaboration with Caitlyn Parmelee, Sumita Garai, and Joshua Paik. August 16, 2020. This README file was updated on September 19, 2020, to add a link to the graph calculator. It was updated again on August 14, 2023, to describe some of the updated files and figures.
